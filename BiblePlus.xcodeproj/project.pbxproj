@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E949DBE269F9FD60046CB72 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E949DBC269F9FD60046CB72 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E949DC4269FB0340046CB72 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DC3269FB0340046CB72 /* DomainError.swift */; };
+		7E949DC7269FB0800046CB72 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DC6269FB0800046CB72 /* AccountModel.swift */; };
+		7E949DC9269FB0A10046CB72 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DC8269FB0A10046CB72 /* Model.swift */; };
+		7E949DCC269FB0E20046CB72 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DCB269FB0E20046CB72 /* AddAccount.swift */; };
+		7E949DCE269FB1150046CB72 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DCD269FB1150046CB72 /* Authentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E949DBA269F9FD60046CB72 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E949DBC269F9FD60046CB72 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		7E949DBD269F9FD60046CB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E949DC3269FB0340046CB72 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		7E949DC6269FB0800046CB72 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		7E949DC8269FB0A10046CB72 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7E949DCB269FB0E20046CB72 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		7E949DCD269FB1150046CB72 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,38 @@
 		7E949DBB269F9FD60046CB72 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				7E949DBC269F9FD60046CB72 /* Domain.h */,
+				7E949DC2269FB0170046CB72 /* Errors */,
+				7E949DC5269FB0500046CB72 /* Models */,
+				7E949DCA269FB0C60046CB72 /* UseCases */,
 				7E949DBD269F9FD60046CB72 /* Info.plist */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		7E949DC2269FB0170046CB72 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				7E949DC3269FB0340046CB72 /* DomainError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		7E949DC5269FB0500046CB72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E949DC6269FB0800046CB72 /* AccountModel.swift */,
+				7E949DC8269FB0A10046CB72 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E949DCA269FB0C60046CB72 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7E949DCB269FB0E20046CB72 /* AddAccount.swift */,
+				7E949DCD269FB1150046CB72 /* Authentication.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +95,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E949DBE269F9FD60046CB72 /* Domain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +129,7 @@
 				TargetAttributes = {
 					7E949DB9269F9FD60046CB72 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E949DC9269FB0A10046CB72 /* Model.swift in Sources */,
+				7E949DCC269FB0E20046CB72 /* AddAccount.swift in Sources */,
+				7E949DC4269FB0340046CB72 /* DomainError.swift in Sources */,
+				7E949DCE269FB1150046CB72 /* Authentication.swift in Sources */,
+				7E949DC7269FB0800046CB72 /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +301,7 @@
 		7E949DC0269F9FD60046CB72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -277,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bible.plus.app.ios.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -284,6 +327,7 @@
 		7E949DC1269F9FD60046CB72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;

@@ -39,6 +39,7 @@
 		7E949DC9269FB0A10046CB72 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DC8269FB0A10046CB72 /* Model.swift */; };
 		7E949DCC269FB0E20046CB72 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DCB269FB0E20046CB72 /* AddAccount.swift */; };
 		7E949DCE269FB1150046CB72 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DCD269FB1150046CB72 /* Authentication.swift */; };
+		7ED75B4526A0FBAE0019C504 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED75B3C26A0FBAE0019C504 /* Presentation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7E779EDB26A0EFAC0030FA2C;
 			remoteInfo = Infra;
+		};
+		7ED75B4626A0FBAE0019C504 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E949DA1269F9ED90046CB72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ED75B3B26A0FBAE0019C504;
+			remoteInfo = Presentation;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -153,6 +161,10 @@
 		7E949DC8269FB0A10046CB72 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7E949DCB269FB0E20046CB72 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
 		7E949DCD269FB1150046CB72 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		7ED75B3C26A0FBAE0019C504 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED75B3F26A0FBAE0019C504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ED75B4426A0FBAE0019C504 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED75B4B26A0FBAE0019C504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +213,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED75B3926A0FBAE0019C504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED75B4126A0FBAE0019C504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED75B4526A0FBAE0019C504 /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +387,8 @@
 				7E779EDD26A0EFAC0030FA2C /* Infra */,
 				7E779EE826A0EFAC0030FA2C /* InfraTests */,
 				7E779F1126A0F7340030FA2C /* UseCasesIntegrationTests */,
+				7ED75B3D26A0FBAE0019C504 /* Presentation */,
+				7ED75B4826A0FBAE0019C504 /* PresentationTests */,
 				7E949DAB269F9ED90046CB72 /* Products */,
 				7E779EB426A0E7AA0030FA2C /* Frameworks */,
 			);
@@ -374,6 +403,8 @@
 				7E779EDC26A0EFAC0030FA2C /* Infra.framework */,
 				7E779EE426A0EFAC0030FA2C /* InfraTests.xctest */,
 				7E779F1026A0F7340030FA2C /* UseCasesIntegrationTests.xctest */,
+				7ED75B3C26A0FBAE0019C504 /* Presentation.framework */,
+				7ED75B4426A0FBAE0019C504 /* PresentationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -415,6 +446,22 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		7ED75B3D26A0FBAE0019C504 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B3F26A0FBAE0019C504 /* Info.plist */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7ED75B4826A0FBAE0019C504 /* PresentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B4B26A0FBAE0019C504 /* Info.plist */,
+			);
+			path = PresentationTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -433,6 +480,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7E949DB5269F9FD60046CB72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED75B3726A0FBAE0019C504 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -559,6 +613,42 @@
 			productReference = 7E949DBA269F9FD60046CB72 /* Domain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7ED75B3B26A0FBAE0019C504 /* Presentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ED75B5126A0FBAE0019C504 /* Build configuration list for PBXNativeTarget "Presentation" */;
+			buildPhases = (
+				7ED75B3726A0FBAE0019C504 /* Headers */,
+				7ED75B3826A0FBAE0019C504 /* Sources */,
+				7ED75B3926A0FBAE0019C504 /* Frameworks */,
+				7ED75B3A26A0FBAE0019C504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Presentation;
+			productName = Presentation;
+			productReference = 7ED75B3C26A0FBAE0019C504 /* Presentation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7ED75B4326A0FBAE0019C504 /* PresentationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ED75B5226A0FBAE0019C504 /* Build configuration list for PBXNativeTarget "PresentationTests" */;
+			buildPhases = (
+				7ED75B4026A0FBAE0019C504 /* Sources */,
+				7ED75B4126A0FBAE0019C504 /* Frameworks */,
+				7ED75B4226A0FBAE0019C504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ED75B4726A0FBAE0019C504 /* PBXTargetDependency */,
+			);
+			name = PresentationTests;
+			productName = PresentationTests;
+			productReference = 7ED75B4426A0FBAE0019C504 /* PresentationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -589,6 +679,12 @@
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
 					};
+					7ED75B3B26A0FBAE0019C504 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7ED75B4326A0FBAE0019C504 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 7E949DA4269F9ED90046CB72 /* Build configuration list for PBXProject "BiblePlus" */;
@@ -613,6 +709,8 @@
 				7E779EDB26A0EFAC0030FA2C /* Infra */,
 				7E779EE326A0EFAC0030FA2C /* InfraTests */,
 				7E779F0F26A0F7340030FA2C /* UseCasesIntegrationTests */,
+				7ED75B3B26A0FBAE0019C504 /* Presentation */,
+				7ED75B4326A0FBAE0019C504 /* PresentationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -654,6 +752,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7E949DB8269F9FD60046CB72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED75B3A26A0FBAE0019C504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED75B4226A0FBAE0019C504 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -729,6 +841,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7ED75B3826A0FBAE0019C504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED75B4026A0FBAE0019C504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -766,6 +892,11 @@
 			isa = PBXTargetDependency;
 			target = 7E779EDB26A0EFAC0030FA2C /* Infra */;
 			targetProxy = 7E779F1D26A0F7570030FA2C /* PBXContainerItemProxy */;
+		};
+		7ED75B4726A0FBAE0019C504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ED75B3B26A0FBAE0019C504 /* Presentation */;
+			targetProxy = 7ED75B4626A0FBAE0019C504 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1156,6 +1287,90 @@
 			};
 			name = Release;
 		};
+		7ED75B4D26A0FBAE0019C504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Presentation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bible.plus.app.ios.Presentation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7ED75B4E26A0FBAE0019C504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Presentation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bible.plus.app.ios.Presentation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7ED75B4F26A0FBAE0019C504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = PresentationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bible.plus.app.ios.PresentationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7ED75B5026A0FBAE0019C504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = PresentationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bible.plus.app.ios.PresentationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1218,6 +1433,24 @@
 			buildConfigurations = (
 				7E949DC0269F9FD60046CB72 /* Debug */,
 				7E949DC1269F9FD60046CB72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ED75B5126A0FBAE0019C504 /* Build configuration list for PBXNativeTarget "Presentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ED75B4D26A0FBAE0019C504 /* Debug */,
+				7ED75B4E26A0FBAE0019C504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ED75B5226A0FBAE0019C504 /* Build configuration list for PBXNativeTarget "PresentationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ED75B4F26A0FBAE0019C504 /* Debug */,
+				7ED75B5026A0FBAE0019C504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E722AA626A106C900B859CB /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E949DBA269F9FD60046CB72 /* Domain.framework */; };
 		7E779EA626A0E70C0030FA2C /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E779E9D26A0E70C0030FA2C /* Data.framework */; };
 		7E779EB526A0E7AA0030FA2C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E949DBA269F9FD60046CB72 /* Domain.framework */; };
 		7E779EB626A0E7AA0030FA2C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E949DBA269F9FD60046CB72 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,6 +41,24 @@
 		7E949DCC269FB0E20046CB72 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DCB269FB0E20046CB72 /* AddAccount.swift */; };
 		7E949DCE269FB1150046CB72 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E949DCD269FB1150046CB72 /* Authentication.swift */; };
 		7ED75B4526A0FBAE0019C504 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED75B3C26A0FBAE0019C504 /* Presentation.framework */; };
+		7ED75B5726A0FCAB0019C504 /* LoadingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B5626A0FCAB0019C504 /* LoadingViewSpy.swift */; };
+		7ED75B5926A0FCCE0019C504 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B5826A0FCCE0019C504 /* AlertViewSpy.swift */; };
+		7ED75B5C26A100DB0019C504 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B5B26A100DB0019C504 /* AddAccountSpy.swift */; };
+		7ED75B5E26A100F90019C504 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B5D26A100F90019C504 /* AuthenticationSpy.swift */; };
+		7ED75B6226A101300019C504 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B6126A101300019C504 /* LoginPresenterTests.swift */; };
+		7ED75B6526A101EF0019C504 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B6426A101EF0019C504 /* SignUpPresenterTests.swift */; };
+		7ED75B6826A1025D0019C504 /* TestFactoriesPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B6726A1025D0019C504 /* TestFactoriesPresentation.swift */; };
+		7ED75B6B26A102D30019C504 /* ValidationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B6A26A102D30019C504 /* ValidationSpy.swift */; };
+		7ED75B7026A1034B0019C504 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B6F26A1034B0019C504 /* LoginPresenter.swift */; };
+		7ED75B7226A103790019C504 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B7126A103790019C504 /* LoginRequest.swift */; };
+		7ED75B7426A103930019C504 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B7326A103930019C504 /* SignUpPresenter.swift */; };
+		7ED75B7626A103B20019C504 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B7526A103B20019C504 /* SignUpRequest.swift */; };
+		7ED75B7926A103E70019C504 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B7826A103E70019C504 /* Validation.swift */; };
+		7ED75B7C26A1043B0019C504 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B7B26A1043B0019C504 /* AlertView.swift */; };
+		7ED75B7E26A104580019C504 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED75B7D26A104580019C504 /* LoadingView.swift */; };
+		7ED75B7F26A104BC0019C504 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E779EC826A0EB0A0030FA2C /* AccountModelFactory.swift */; };
+		7ED75B8026A104C90019C504 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E779ECB26A0EB530030FA2C /* TestFactories.swift */; };
+		7ED75B8126A104CD0019C504 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E779ECD26A0EBCF0030FA2C /* TestExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +184,21 @@
 		7ED75B3F26A0FBAE0019C504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED75B4426A0FBAE0019C504 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED75B4B26A0FBAE0019C504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ED75B5626A0FCAB0019C504 /* LoadingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewSpy.swift; sourceTree = "<group>"; };
+		7ED75B5826A0FCCE0019C504 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
+		7ED75B5B26A100DB0019C504 /* AddAccountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountSpy.swift; sourceTree = "<group>"; };
+		7ED75B5D26A100F90019C504 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
+		7ED75B6126A101300019C504 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		7ED75B6426A101EF0019C504 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
+		7ED75B6726A1025D0019C504 /* TestFactoriesPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactoriesPresentation.swift; sourceTree = "<group>"; };
+		7ED75B6A26A102D30019C504 /* ValidationSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationSpy.swift; sourceTree = "<group>"; };
+		7ED75B6F26A1034B0019C504 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		7ED75B7126A103790019C504 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		7ED75B7326A103930019C504 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		7ED75B7526A103B20019C504 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		7ED75B7826A103E70019C504 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		7ED75B7B26A1043B0019C504 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		7ED75B7D26A104580019C504 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E722AA626A106C900B859CB /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +484,9 @@
 		7ED75B3D26A0FBAE0019C504 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7ED75B6C26A103230019C504 /* Presenters */,
+				7ED75B7726A103CF0019C504 /* Validators */,
+				7ED75B7A26A104120019C504 /* Views */,
 				7ED75B3F26A0FBAE0019C504 /* Info.plist */,
 			);
 			path = Presentation;
@@ -457,9 +495,117 @@
 		7ED75B4826A0FBAE0019C504 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
+				7ED75B6626A102270019C504 /* Helpers */,
+				7ED75B5F26A101180019C504 /* Presenters */,
+				7ED75B6926A102A40019C504 /* Validators */,
+				7ED75B5A26A100CC0019C504 /* UseCases */,
+				7ED75B5526A0FC950019C504 /* Views */,
 				7ED75B4B26A0FBAE0019C504 /* Info.plist */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		7ED75B5526A0FC950019C504 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B5626A0FCAB0019C504 /* LoadingViewSpy.swift */,
+				7ED75B5826A0FCCE0019C504 /* AlertViewSpy.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7ED75B5A26A100CC0019C504 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B5B26A100DB0019C504 /* AddAccountSpy.swift */,
+				7ED75B5D26A100F90019C504 /* AuthenticationSpy.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7ED75B5F26A101180019C504 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B6026A1011F0019C504 /* Login */,
+				7ED75B6326A101460019C504 /* SignUp */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		7ED75B6026A1011F0019C504 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B6126A101300019C504 /* LoginPresenterTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7ED75B6326A101460019C504 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B6426A101EF0019C504 /* SignUpPresenterTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7ED75B6626A102270019C504 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B6726A1025D0019C504 /* TestFactoriesPresentation.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7ED75B6926A102A40019C504 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B6A26A102D30019C504 /* ValidationSpy.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		7ED75B6C26A103230019C504 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B6D26A1032C0019C504 /* Login */,
+				7ED75B6E26A103320019C504 /* SignUp */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		7ED75B6D26A1032C0019C504 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B6F26A1034B0019C504 /* LoginPresenter.swift */,
+				7ED75B7126A103790019C504 /* LoginRequest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7ED75B6E26A103320019C504 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B7326A103930019C504 /* SignUpPresenter.swift */,
+				7ED75B7526A103B20019C504 /* SignUpRequest.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7ED75B7726A103CF0019C504 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B7826A103E70019C504 /* Validation.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		7ED75B7A26A104120019C504 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7ED75B7B26A1043B0019C504 /* AlertView.swift */,
+				7ED75B7D26A104580019C504 /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,9 +827,11 @@
 					};
 					7ED75B3B26A0FBAE0019C504 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					7ED75B4326A0FBAE0019C504 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -845,6 +993,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED75B7426A103930019C504 /* SignUpPresenter.swift in Sources */,
+				7ED75B7626A103B20019C504 /* SignUpRequest.swift in Sources */,
+				7ED75B7026A1034B0019C504 /* LoginPresenter.swift in Sources */,
+				7ED75B7926A103E70019C504 /* Validation.swift in Sources */,
+				7ED75B7226A103790019C504 /* LoginRequest.swift in Sources */,
+				7ED75B7E26A104580019C504 /* LoadingView.swift in Sources */,
+				7ED75B7C26A1043B0019C504 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +1007,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED75B6526A101EF0019C504 /* SignUpPresenterTests.swift in Sources */,
+				7ED75B5C26A100DB0019C504 /* AddAccountSpy.swift in Sources */,
+				7ED75B8026A104C90019C504 /* TestFactories.swift in Sources */,
+				7ED75B5926A0FCCE0019C504 /* AlertViewSpy.swift in Sources */,
+				7ED75B5E26A100F90019C504 /* AuthenticationSpy.swift in Sources */,
+				7ED75B5726A0FCAB0019C504 /* LoadingViewSpy.swift in Sources */,
+				7ED75B6B26A102D30019C504 /* ValidationSpy.swift in Sources */,
+				7ED75B6826A1025D0019C504 /* TestFactoriesPresentation.swift in Sources */,
+				7ED75B6226A101300019C504 /* LoginPresenterTests.swift in Sources */,
+				7ED75B7F26A104BC0019C504 /* AccountModelFactory.swift in Sources */,
+				7ED75B8126A104CD0019C504 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1290,6 +1456,7 @@
 		7ED75B4D26A0FBAE0019C504 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1307,6 +1474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bible.plus.app.ios.Presentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1314,6 +1482,7 @@
 		7ED75B4E26A0FBAE0019C504 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1338,6 +1507,8 @@
 		7ED75B4F26A0FBAE0019C504 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VP82G3HGX6;
@@ -1349,6 +1520,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bible.plus.app.ios.PresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1356,6 +1528,8 @@
 		7ED75B5026A0FBAE0019C504 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VP82G3HGX6;
